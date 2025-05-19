@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bloo">#0097A7</color>
+    <color name="backgroundColor">#161515</color> <!-- Remplace par la couleur souhaitée -->
+    <color name="buttonColor">#6200EE</color> <!-- Mets la couleur que tu veux -->
+</resources>

@@ -1,0 +1,112 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter un enseignement"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Porte parole (ancien Titre de l'enseignement) -->
+        <EditText
+            android:id="@+id/editPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Porte parole (celui qui parle et enseigne)"
+            android:textColor="#000000"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Thème -->
+        <EditText
+            android:id="@+id/editTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Thème"
+            android:textColor="#000000"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Versets bibliques -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versets bibliques"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/versesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- Bouton pour ajouter un verset -->
+        <Button
+            android:id="@+id/btnAddVerse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ Ajouter un verset"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Sélecteur de date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de l'enseignement"
+            android:textColor="@color/white"
+            android:paddingTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Sélectionner la date"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Résumé de l'enseignement -->
+        <EditText
+            android:id="@+id/editSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Résumé de l'enseignement"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:minLines="3"
+            android:gravity="top"/>
+
+        <!-- Bouton Sauvegarder -->
+        <Button
+            android:id="@+id/btnSaveTeaching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 Sauvegarder"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

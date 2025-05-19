@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addSongScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:id="@+id/addSongContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/txtAddSongTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎶 Ajouter une chanson"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="30dp" />
+
+        <!-- NOM -->
+        <EditText
+            android:id="@+id/editSongName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="🎵 Nom de la chanson"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <!-- GENRE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎼 Genre"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerGenre"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="#000000"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:background="@drawable/rounded_spinner" />
+
+        <!-- TONALITÉ -->
+        <EditText
+            android:id="@+id/editTonalite"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:hint="🎶 Tonalité"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <!-- POSTES -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Musiciens"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/editBatterie"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="🥁 Nom du batteur"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/editBasse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="🎸 Nom du bassiste"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/editSolo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="🎸 Nom du guitariste solo"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/editClavier1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="🎹 Clavier 1"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/editClavier2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="🎹 Clavier 2"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <!-- BOUTON -->
+        <Button
+            android:id="@+id/btnSaveSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 Sauvegarder"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Carte principale -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <!-- Titre -->
+            <TextView
+                android:id="@+id/teachingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titre de l'enseignement"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingBottom="8dp" />
+
+            <!-- Porte-parole -->
+            <TextView
+                android:id="@+id/teachingSpeaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👤 Porte-parole :"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingTop="8dp" />
+
+            <!-- Date -->
+            <TextView
+                android:id="@+id/teachingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📅 Date :"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingTop="4dp" />
+
+            <!-- Thème -->
+            <TextView
+                android:id="@+id/teachingTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📌 Thème :"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:paddingTop="4dp" />
+
+            <!-- Versets -->
+            <TextView
+                android:id="@+id/teachingVersets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📖 Versets :"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingTop="20dp" />
+
+            <!-- Résumé -->
+            <TextView
+                android:id="@+id/teachingSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📝 Résumé :"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingTop="25dp"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

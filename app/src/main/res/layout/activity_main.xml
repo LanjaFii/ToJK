@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:animateLayoutChanges="true">
+
+        <!-- Logo avec animation -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/tojk"
+            android:layout_gravity="center"
+            android:transitionName="logo"
+            android:contentDescription="Logo" />
+
+        <!-- Bouton Ajouter stylé -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ Ajouter song / teaching"
+            android:textSize="18sp"
+            android:layout_marginTop="32dp"
+            android:elevation="4dp"
+            android:background="@drawable/button_add"
+            android:textColor="@android:color/white" />
+
+        <!-- Section Chansons -->
+        <ImageButton
+            android:id="@+id/btnSongs"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/rounded_button"
+            android:contentDescription="Chansons"
+            android:scaleType="centerCrop"
+            android:elevation="6dp"
+            android:src="@drawable/songs" />
+
+        <!-- Section Enseignement -->
+        <ImageButton
+            android:id="@+id/btnTeaching"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button"
+            android:contentDescription="Spirit Teaching"
+            android:scaleType="centerCrop"
+            android:elevation="6dp"
+            android:src="@drawable/learn" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#fefefe">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🎵 Nom de la chanson"
+            android:textColor="#000000"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🎼 Genre"
+            android:textColor="#000000"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTonalite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🎶 Tonalité"
+            android:textColor="#000000"
+            android:minHeight="48dp" />
+
+        <View android:layout_height="16dp" android:layout_width="match_parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Musiciens"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editBatterie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🥁 Batterie"
+            android:textColor="#000000"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editBass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🎸 Bass"
+            android:textColor="#000000"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editSolo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🎸 Solo"
+            android:textColor="#000000"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editClavier1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🎹 Clavier 1"
+            android:textColor="#000000"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editClavier2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🎹 Clavier 2"
+            android:textColor="#000000"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnModifier"
+            android:text="✅ Enregistrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+</ScrollView>
